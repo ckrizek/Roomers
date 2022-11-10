@@ -1,0 +1,114 @@
+
+
+/* Scroll To Top Button */
+
+.to_top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 0;
+    transition: all .4s;
+    pointer-events: none;
+}
+
+#first_animation_icon {
+    position: absolute;
+    background: transparent;
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+    right: 12.2px;
+    top: 6px;
+    animation: fade_in 1s forwards;
+}
+
+#second_animation_icon {
+    position: absolute;
+    top: 35px;
+    right: 12.2px;
+    background: transparent;
+    font-size: 25px;
+    color: rgb(20, 20, 20, 0);
+    -webkit-transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out;
+}
+
+#third_animation_icon {
+    position: absolute;
+    right: 12.2px;
+    bottom: 9px;
+    background: transparent;
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+    -webkit-transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out;
+}
+
+#fourth_animation_icon {
+    position: absolute;
+    right: 12.2px;
+    bottom: 37px;
+    background: transparent;
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+    -webkit-transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out;
+}
+
+#scroll_to_top_btn {
+    position: fixed;
+    background-color: var(--accent);
+    right: 10px;
+    bottom: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s;
+    overflow: hidden;
+    z-index: 13;
+}
+
+#scroll_to_top_btn:hover #first_animation_icon {
+    transform: translateY(-28px);
+    -webkit-transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out;
+    animation: fade_out 1s forwards;
+}
+
+#scroll_to_top_btn:hover #second_animation_icon{
+    transform: translateY(-28px);
+    -webkit-transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out;
+    color: rgb(20, 20, 20, 1);
+}
+
+#scroll_to_top_btn:hover #third_animation_icon {
+  opacity: 0;
+  transform: translateY(28px);
+  -webkit-transition: transform 0.5s ease-out;
+          transition: transform 0.5s ease-out;
+}
+
+#scroll_to_top_btn:hover #fourth_animation_icon{
+    transform: translateY(29px);
+    opacity: 0;
+}
+
+@keyframes fade_out {
+    0%   { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade_in {
+  0%   { opacity: 0; }
+  99%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* END Scroll To Top Button */
+
+/* Header */
+
+/* END Header */
